@@ -36,8 +36,7 @@ const App = () => {
         <option value="entertainment">Entertainment</option>
         <option value="science">Science</option>
       </select>
-      {
-        loading && <p className="loader">Loading...</p>
+      {loading && <p className="loader">Loading...</p>
         {!loading &&
       <ol>
       {newsData.map((news,index)=>
@@ -53,7 +52,7 @@ const App = () => {
             </section>
           </section>
         </li>
-      ))}
+      }}}
       </ol>
         }
     </div>
